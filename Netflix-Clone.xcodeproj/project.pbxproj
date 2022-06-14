@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		185045F54B01FCE26F595B35 /* Pods_Netflix_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3FBF920CC9F06CD8392E36 /* Pods_Netflix_Clone.framework */; };
+		696E4C2D2859341C0014B416 /* Biometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E4C2C2859341C0014B416 /* Biometric.swift */; };
 		69F1F0E92858FEFC00877250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1F0E82858FEFC00877250 /* AppDelegate.swift */; };
 		69F1F0EB2858FEFC00877250 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1F0EA2858FEFC00877250 /* SceneDelegate.swift */; };
 		69F1F0ED2858FEFC00877250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1F0EC2858FEFC00877250 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		0B3A8216BFFE65EDB813695C /* Pods-Netflix-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netflix-Clone.release.xcconfig"; path = "Target Support Files/Pods-Netflix-Clone/Pods-Netflix-Clone.release.xcconfig"; sourceTree = "<group>"; };
+		696E4C2C2859341C0014B416 /* Biometric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biometric.swift; sourceTree = "<group>"; };
 		69F1F0E52858FEFC00877250 /* Netflix-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F1F0E82858FEFC00877250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69F1F0EA2858FEFC00877250 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		696E4C2A285934060014B416 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				696E4C2B285934120014B416 /* Biometric */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		696E4C2B285934120014B416 /* Biometric */ = {
+			isa = PBXGroup;
+			children = (
+				696E4C2C2859341C0014B416 /* Biometric.swift */,
+			);
+			path = Biometric;
+			sourceTree = "<group>";
+		};
 		69F1F0DC2858FEFC00877250 = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +162,8 @@
 		69F1F0E72858FEFC00877250 /* Netflix-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				696E4C2A285934060014B416 /* Managers */,
 				69F1F14328592D5400877250 /* Models */,
-				69F1F12C28590F0C00877250 /* Managers */,
 				69F1F12128590E4800877250 /* Protocols */,
 				69F1F11E28590E1600877250 /* Common */,
 				69F1F11D28590DEB00877250 /* Resources */,
@@ -311,21 +329,6 @@
 			children = (
 			);
 			path = RecoverPass;
-			sourceTree = "<group>";
-		};
-		69F1F12C28590F0C00877250 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				69F1F12D28590F1300877250 /* Authentication */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		69F1F12D28590F1300877250 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		69F1F12E28590F2800877250 /* Home */ = {
@@ -717,6 +720,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696E4C2D2859341C0014B416 /* Biometric.swift in Sources */,
 				69F1F14B28592D8900877250 /* Shorts.swift in Sources */,
 				69F1F0F32858FEFC00877250 /* Netflix_Clone.xcdatamodeld in Sources */,
 				69F1F14928592D8100877250 /* Lists.swift in Sources */,
