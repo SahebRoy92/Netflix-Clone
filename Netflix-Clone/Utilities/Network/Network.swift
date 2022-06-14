@@ -9,16 +9,15 @@ import Foundation
 
 class Network: NetworkProtocol {
     
-    static func fetch(_ endpoint: Endpoints, completion: @escaping([String : Any]?) -> ()) {
+    static func fetch(_ endpoint: Endpoints, completion: @escaping([String : Any]?) -> Void) {
         guard let url = URL(string: endpoint.url) else { return print("Error") }
         var request = URLRequest.init(url: url)
         request.httpMethod = endpoint.type.rawValue
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let obtainedData = data else { return print("No data")}
-            if let result = try? JSONSerialization.jsonObject(with: obtainedData, options: []) as? [String : Any] {
+            if let result = try? JSONSerialization.jsonObject(with: obtainedData, options: []) as? [String: Any] {
                 completion(result)
-            }
-            else {
+            } else {
                 completion(nil)
             }
         }.resume()
